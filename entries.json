@@ -6,10 +6,18 @@
 		"c-style",
 		"poor design",
 		"no constructors",
-		"no user-type iteration",
 		"`new` and `make` instead of one",
-		"stuck in 70's",
+		"stuck in '70s",
 		"no OOP",
+		"types go after identifiers, not before",
+		"return types after function name, not before",
+		"no while loops",
+		"can't range over user-defined types",
+		"constants can only be numbers or strings",
+		"pointers are a mess",
+		"can't name nested functions",
+		"single-pass compiler",
+		"designers did not consult the literature",
 		"too simple / lack of syntactic sugar"
 	]
 },{
@@ -20,10 +28,16 @@
 		"no language interoperability (only C)",
 		"no versioning model",
 		"no OOP",
+		"no GUI support",
+		"`new` and `make` instead of one",
+		"internationalization is limited to Unicode support",
 		"has pointers",
 		"no semicolons at line endings",
 		"no `this`",
 		"no function/operator overloading",
+		"not real-world oriented",
+		"`defer` lets you be lazy",
+		"ignores C#",
 		"no exceptions"
 	]
 },{
@@ -31,19 +45,22 @@
 	"Author": "Yuval Greenfield",
 	"Year": 2012,
 	"Complaints": [
-		"error handling",
-		"stuck in 70's",
-		"`panic` instead of exceptions"
+		"error handling is mandatory",
+		"stuck in '70s",
+		"no exceptions"
 	]
 },{
 	"URL": "http://www.darkcoding.net/software/go-lang-after-four-months/",
 	"Author": "Graham King",
 	"Year":  2012,
 	"Complaints": [
-		"un-googlable name",
-		"stuck in 70's",
+		"un-Googlable name",
+		"stuck in '70s",
 		"no exceptions",
 		"is compiled",
+		"no read-eval-print loop",
+		"`fork()` is either wrong or impossible",
+		"string manipulation is a library package",
 		"too young"
 	]
 },{
@@ -52,8 +69,12 @@
 	"Year": 2013,
 	"Complaints": [
 		"no OOP",
-		"no asserts",
+		"no assertions",
 		"has pointers",
+		"solves nobody's problem",
+		"no inheritance",
+		"no function/operator overloading",
+		"designers did not consult the literature",
 		"weird mascot (gopher)"
 	]
 },{
@@ -61,8 +82,12 @@
 	"Author": "Tim Penhey",
 	"Year": 2013,
 	"Complaints": [
-		"error handling",
+		"error handling is mandatory",
+		"no exceptions",
 		"inconvenient `range`",
+		"can't range over user-defined types",
+		"tab width too wide",
+		"gofmt's style is no one's favourite",
 		"no generics"
 	]
 },{
@@ -70,7 +95,9 @@
 	"Author": "Aldo Cortesi",
 	"Year": 2013,
 	"Complaints":[
-		"too opinionated"
+		"too opinionated",
+		"unused imports are compile errors",
+		"unused variables are compile errors"
 	]
 },{
 	"URL": "http://yager.io/programming/go.html",
@@ -82,18 +109,16 @@
 		"nil as a failure marker",
 		"type inference is too simple",
 		"no immutables",
+		"not a good language",
+		"unwieldy to code new collections",
+		"can't range over user-defined types",
+		"no ternary operator",
+		"dynamic memory allocation",
+		"garbage collector requires implicit (hidden) trade-offs",
+		"not real-time oriented",
+		"no unsafe code isolation",
+		"stuck in '70s",
 		"no pattern matching"
-	]
-},{
-	"URL": "http://blog.mattbasta.com/things_that_make_me_sad_in_go.html",
-	"Author": "Matt Basta",
-	"Year": 2014,
-	"Complaints":[
-		"project layout is bad",
-		"can't import packages relatively",
-		"different build approaches",
-		"no sugar for slices",
-		"lack of basic data structures"
 	]
 },{
 	"URL": "https://rule1.quora.com/Golang-Not-yet",
@@ -103,13 +128,15 @@
 		"no decent IDE",
 		"GOPATH is a mess",
 		"pointers are a mess",
-		"upper-case/lower-case scoping is bad",
+		"case-defined scoping is bad",
 		"hidden types",
 		"immature GC",
 		"hard to extend",
 		"no exceptions",
 		"no generics",
-		"bad dependency management"
+		"channels are overrated",
+		"duck typing of local variables",
+		"dependency management sucks"
 	]
 },{
 	"URL": "http://blog.goodstuff.im/golang",
@@ -117,24 +144,23 @@
 	"Year":  2015,
 	"Complaints":[
 		"no immutables",
+		"no ternary operator",
+		"inconvenient `range`",
+		":= is weird",
+		"no exceptions",
+		"unused imports are compile errors",
+		"unused variables are compile errors",
+		"no read-eval-print loop",
 		"too simple / lack of syntactic sugar",
 		"confusing/stupid syntax",
 		"too opinionated",
-		"error handling",
-		"stuck in 70's",
+		"error handling is mandatory",
+		"error handling is not mandatory",
+		"designers did not consult the literature",
+		"stuck in '70s",
 		"no generics",
-		"upper-case/lower-case scoping is bad",
+		"case-defined scoping is bad",
 		"no `map`/`reduce`/`filter`"
-	]
-},{
-	"URL": "http://nomad.so/2015/03/why-gos-design-is-a-disservice-to-intelligent-programmers/",
-	"Author": "Gary Willoughby",
-	"Year": 2015,
-	"Complaints":[
-		"too simple / lack of syntactic sugar",
-		"no generics",
-		"bad dependency management",
-		"stuck in 70's"
 	]
 },{
 	"URL": "http://spaces-vs-tabs.com/4-weeks-of-golang-the-good-the-bad-and-the-ugly/",
@@ -142,7 +168,7 @@
 	"Year":  2015,
 	"Complaints":[
 		"not-so-obvious slices behaviour",
-		"error handling",
+		"error handling is mandatory",
 		"hard to test, hard to mock"
 	]
 },{
@@ -152,7 +178,9 @@
 	"Complaints":[
 		"no generics",
 		"slow json parsing",
-		"bad dependency management",
+		"dependency management sucks",
+		"too verbose",
+		"GOPATH is a mess",
 		"no subpackages"
 	]
 },{
@@ -163,7 +191,7 @@
 		"not-so-obvious slices behaviour",
 		"nil interfaces are not entirely nil",
 		"unexpected variable shadowing",
-		"no first-class support of interfaces",
+		"interfaces are not first-class values",
 		"questionable compiler rigidity",
 		"go generate is a quirk"
 	]
@@ -173,7 +201,12 @@
 	"Year": 2014,
 	"Complaints": [
 		"the worst compiler toolchain ever",
-		"psuedointellectual arrogance of Rob Pike and everything he stands for",
+		"Rob Pike and other core developers are arrogant",
+		"stuck in '70s",
+		"Fisher-Price assembly language",
+		"stuck in Plan9 thinking",
+		"technical hubris",
+		"assembler uses Unicode mid-dot character",
 		"confusing and undebuggable"
 	]
 },{
@@ -181,9 +214,15 @@
 	"Author": "Evan Miller",
 	"Year": 2015,
 	"Complaints": [
-		"no unused imports",
+		"unused imports are compile errors",
 		"too opinionated",
 		"poor std math lib",
+		":= is weird",
+		"no while loops",
+		"'rune' is a weird name",
+		"is garbage-collected",
+		"unused variables are compile errors",
+		"pseudointellectual arrogance of Rob Pike and everything he stands for",
 		"weird mascot (gopher)"
 	]
 },{
@@ -192,146 +231,375 @@
 	"Year": 2014,
 	"Complaints": [
 		"no decent IDE",
-		"error handling",
+		"error handling is mandatory",
 		"unexpected variable shadowing",
 		"no generics",
+		"no `map`/`reduce`/`filter`",
+		"no immutables",
 		"not-so-obvious slices behaviour"
 	]
 },{
-        "URL": "http://tmikov.blogspot.com/2015/02/you-dont-like-googles-go-because-you.html",
-        "Author": "Tzvetan Mikov",
-        "Year": 2015,
-        "Complaints": [
-                "designed for stupid people",
-                "too verbose",
-                "no ternary operator",
-                "no macros or templates",
-                "can't change hash function in maps",
-                "unwieldy to code new collections",
-                "no function overloading",
-                "can't declare/validate implements interface",
-                "no virtual functions",
-                "case defined exports is bad"
-        ]
+	"URL": "http://tmikov.blogspot.com/2015/02/you-dont-like-googles-go-because-you.html",
+	"Author": "Tzvetan Mikov",
+	"Year": 2015,
+	"Complaints": [
+		"designed for stupid people",
+		"too verbose",
+		"no ternary operator",
+		"no macros or templates",
+		"can't change hash function in maps",
+		"unwieldy to code new collections",
+		"inconvenient `range`",
+		"no function/operator overloading",
+		"can't declare/validate implements interface",
+		"no virtual functions",
+		"case-defined scoping is bad"
+	]
 },{
-        "URL": "http://valuedrivenit.blogspot.ru/2015/12/to-go-language-is-mess.html",
-        "Author": "Cliff Berg",
-        "Year": 2015,
-        "Complaints": [
-                "un-googlable name",
-                "confusing/stupid syntax",
-                "polymorphism is broken",
-                "compilation rules are too confining",
-                "designed for stupid people",
-                "package mechanism is broken"
-        ]
+	"URL": "http://valuedrivenit.blogspot.ru/2015/12/to-go-language-is-mess.html",
+	"Author": "Cliff Berg",
+	"Year": 2015,
+	"Complaints": [
+		"un-Googlable name",
+		"confusing/stupid syntax",
+		"polymorphism is broken",
+		"compilation rules are too confining",
+		"designed for stupid people",
+		"can't declare/validate implements interface",
+		"dependency management sucks"
+	]
 },{
-    "URL": "https://medium.com/@rgausnet/3-reasons-why-go-isnt-the-perfect-language-yet-25e0da5ec04c",
-    "Author": "Ryan Gaus",
-    "Year": 2016,
-    "Complaints": [
-        "not stable",
-        "no `map`/`reduce`/`filter`",
-        "bad dependency management"
-    ]
+	"URL": "https://medium.com/@rgausnet/3-reasons-why-go-isnt-the-perfect-language-yet-25e0da5ec04c",
+	"Author": "Ryan Gaus",
+	"Year": 2016,
+	"Complaints": [
+		"not stable",
+		"no `map`/`reduce`/`filter`",
+		"no OOP",
+		"dependency management sucks"
+	]
 },{
-    "URL": "http://www.jtolds.com/writing/2016/03/go-channels-are-bad-and-you-should-feel-bad/",
-    "Author": "JT Olds",
-    "Year": 2016,
-    "Complaints": [
-        "channels are slow",
-        "channel API is inconsistent"
-    ]
+	"URL": "http://www.jtolds.com/writing/2016/03/go-channels-are-bad-and-you-should-feel-bad/",
+	"Author": "JT Olds",
+	"Year": 2016,
+	"Complaints": [
+		"channels are slow",
+		"channels are an anti-pattern",
+		"channels are not as efficient as plain mutexes",
+		"channel buffers are a fixed size",
+		"sending to a closed channel panics",
+		"sending to a nil channel does not panic",
+		"channel API is inconsistent"
+	]
 },{
-    "URL": "https://blog.plan99.net/modern-garbage-collection-911ef4f8bd8e#.62yek82xg",
-    "Author": "Mike Hearn",
-    "Year": 2016,
-    "Complaints": [
-        "misleading marketing around garbage collector",
-        "garbage collector is nothing new; concurrent mark/sweep from the '70s",
-        "garbage collector requires implicit (hidden) tradeoffs",
-        "garbage collector optimized for pause times at the cost of other desirable gc features"
-    ]
+	"URL": "https://blog.plan99.net/modern-garbage-collection-911ef4f8bd8e#.62yek82xg",
+	"Author": "Mike Hearn",
+	"Year": 2016,
+	"Complaints": [
+		"misleading marketing around garbage collector",
+		"garbage collector is nothing new; concurrent mark/sweep from the '70s",
+		"garbage collector requires implicit (hidden) trade-offs",
+		"stuck in '70s",
+		"garbage collector optimized for pause times at the cost of other desirable GC features"
+	]
 },{
-    "URL": "https://awalterschulze.github.io/blog/post/sum-types-over-multiple-returns/",
-    "Author": "Walter Schulze",
-    "Year": 2017,
-    "Complaints": [
-        "no sum types",
-        "no algebraic data types",
-        "multiple return parameters are overrated"
-    ]
+	"URL": "https://awalterschulze.github.io/blog/post/sum-types-over-multiple-returns/",
+	"Author": "Walter Schulze",
+	"Year": 2017,
+	"Complaints": [
+		"no sum types",
+		"no algebraic data types",
+		"tuples are not first-class values",
+		"can't pass multiple return values to a function",
+		"multiple return parameters are overrated"
+	]
 },{
-    "URL": "https://maryvilledevcenter.com/golang-thinks-you-are-a-bad-programmer/",
-    "Author": "Dane Johnson",
-    "Year": 2017,
-    "Complaints": [
-        "too opinionated",
-        "pointers are a mess"
-    ]
+	"URL": "https://maryvilledevcenter.com/golang-thinks-you-are-a-bad-programmer/",
+	"Author": "Dane Johnson",
+	"Year": 2017,
+	"Complaints": [
+		"too opinionated",
+		"error handling is mandatory",
+		"pointers are a mess"
+	]
 },{
-    "URL": "http://sitr.us/2017/02/21/changes-i-would-make-to-go.html",
-    "Author": "Jesse Hallett",
-    "Year":  2017,
-    "Complaints":[
-	      "no non-nullable types",
-	      "error handling",
-	      "no generics",
-	      "no tagged unions",
-	      "no first-class tuple",
-	      "concurrency and parallelism are mixed"
-    ]
+	"URL": "http://sitr.us/2017/02/21/changes-i-would-make-to-go.html",
+	"Author": "Jesse Hallett",
+	"Year":  2017,
+	"Complaints":[
+		"no non-nullable types",
+		"error handling is mandatory",
+		"error handling is not mandatory",
+		"no generics",
+		"no sum types",
+		"zero values are a bad idea",
+		"too verbose",
+		"no macros or templates",
+		"tuples are not first-class values",
+		"no `map`/`reduce`/`filter`",
+		"can't range over user-defined types",
+		"can't `make` user-defined types",
+		"unwieldy to code new collections",
+		"designers did not consult the literature",
+		"concurrency and parallelism are mixed"
+	]
  },{
-    "URL": "http://www.yinwang.org/blog-cn/2014/04/18/golang",
-    "Author": "Wang Yin",
-    "Year": 2014,
-    "Complaints": [
-        "confusing/stupid syntax",
-        "immature toolchain",
-        "immature GC",
-        "no generics",
-        "multiple return values have no type checking",
-        "cumbersome interface",
-        "goroutine is not original and revolutionary",
-        "defer is abused",
-        "stuck in Unix thinking",
-        "summary: not elegant as Python, not strong as Java"
-    ]
+	"URL": "http://www.yinwang.org/blog-cn/2014/04/18/golang",
+	"Author": "Wang Yin",
+	"Year": 2014,
+	"Complaints": [
+		"confusing/stupid syntax",
+		"immature toolchain",
+		"immature GC",
+		"no generics",
+		"multiple return values have no type checking",
+		"cumbersome interface",
+		"goroutines are not original",
+		"`defer` is abused",
+		"stuck in Unix thinking",
+		"types go after identifiers, not before",
+		"no decent IDE",
+		"dependency management sucks",
+		"unwieldy to code new collections",
+		"designers did not consult the literature",
+		"error handling is mandatory",
+		"summary: not elegant as Python, not strong as Java"
+	]
 },{
-    "URL": "http://ridiculousfish.com/blog/posts/go_bloviations.html",
-    "Author": "ridiculousfish",
-    "Year": 2012,
-    "Complaints": [
-        "c-style",
-        "no unused imports",
-        "bad unicode support",
-        "no asserts"
-    ]
+	"URL": "http://ridiculousfish.com/blog/posts/go_bloviations.html",
+	"Author": "ridiculousfish",
+	"Year": 2012,
+	"Complaints": [
+		"c-style",
+		"unused imports are compile errors",
+		"unused variables are compile errors",
+		"bad Unicode support",
+		"types go after identifiers, not before",
+		"return types after function name, not before",
+		"no ternary operator",
+		"too verbose",
+		"semicolons are injected by the lexer",
+		"hard to pass function pointers to C",
+		"no incremental or parallel compilation",
+		"closures capture variables by reference, not by value",
+		"no assertions"
+	]
 },{
-    "URL": "https://www.teamten.com/lawrence/writings/why-i-dont-like-go.html",
-    "Author": "Lawrence Kesteloot",
-    "Year": 2016,
-    "Complaints": [
-        "upper-case/lower-case scoping is bad",
-        "case defined exports is bad",
-        "no first-class support of interfaces",
-        "no exceptions",
-        "difficult to generate code automatically",
-        "no ternary operator",
-        "sort.Interface approach is clumsy",
-        "no versioning model",
-        "import-based vendoring is terrible",
-        "no generics"
-    ]
+	"URL": "https://www.teamten.com/lawrence/writings/why-i-dont-like-go.html",
+	"Author": "Lawrence Kesteloot",
+	"Year": 2016,
+	"Complaints": [
+		"case-defined scoping is bad",
+		"interfaces are not first-class values",
+		"no exceptions",
+		"difficult to generate code automatically",
+		"no ternary operator",
+		"sort.Interface approach is clumsy",
+		"no versioning model",
+		"import-based vendoring is terrible",
+		"no generics"
+	]
 },{
-    "URL": "https://grimoire.ca/dev/go",
-    "Author": "Owen Jacobson",
-    "Year": 2018,
-    "Complaints": [
-        "hostile to developer ergonomics",
-        "too opinionated",
-        "package mechanism is broken",
-        "GOPATH is a mess",
-        "error handling"
-    ]
+	"URL": "https://grimoire.ca/dev/go",
+	"Author": "Owen Jacobson",
+	"Year": 2018,
+	"Complaints": [
+		"hostile to developer ergonomics",
+		"too opinionated",
+		"dependency management sucks",
+		"GOPATH is a mess",
+		"Rob Pike and other core developers are arrogant",
+		"no sum types",
+		"too verbose",
+		"error handling is mandatory"
+	]
+},{
+	"URL": "https://memo.barrucadu.co.uk/three-months-of-go.html",
+	"Author": "Michael Walker",
+	"Year": 2016,
+	"Complaints": [
+		"dependency management sucks",
+		"no generics",
+		"no sum types",
+		"no separation of pure code from effectful code",
+		"godoc doesn't support even basic formatting",
+		"godoc doesn't use source code ordering",
+		"profiler doesn't graph allocations over time",
+		"profiler doesn't track threads or garbage collection",
+		"zero values are a bad idea",
+		"too verbose",
+		"error handling is mandatory",
+		"weak typing"
+	]
+},{
+	"URL": "https://bravenewgeek.com/go-is-unapologetically-flawed-heres-why-we-use-it/",
+	"Author": "Tyler Treat",
+	"Year": 2015,
+	"Complaints": [
+		"no generics",
+		"interfaces are not contracts",
+		"no function/operator overloading",
+		"no exceptions",
+		"can't range over user-defined types",
+		"sending to a closed channel panics",
+		"channels are not as efficient as plain mutexes",
+		"`defer` is slow",
+		"interface indirection is expensive",
+		"can't peek into channels",
+		"can't receive multiple values from channels",
+		"goroutines make it easy to leak things",
+		"dependency management sucks",
+		"immature toolchain",
+		"Rob Pike and other core developers are arrogant",
+		"can't add methods to types from other packages"
+	]
+},{
+	"URL": "https://faiface.github.io/post/context-should-go-away-go2/",
+	"Author": "Michal Štrba",
+	"Year": 2017,
+	"Complaints": [
+		"context spreads like a virus",
+		"context is an inefficient linked list",
+		"context is not an elegant solution to the cancellation problem",
+		"ctx.Value is a map of meaningless objects to meaningless objects"
+	]
+},{
+	"URL": "http://oneofmanyworlds.blogspot.co.uk/2014/01/another-go-at-go-failed.html",
+	"Author": "Srinivas Jonnalagadda",
+	"Year": 2014,
+	"Complaints": [
+		"no built-in set type",
+		"no built-in BitSet/BitArray type",
+		"maps are slow",
+		"slower than Java",
+		"Rob Pike and other core developers are arrogant",
+		"no generics"
+	]
+},{
+	"URL": "http://dtrace.org/blogs/ahl/2016/08/02/i-love-go-i-hate-go/",
+	"Author": "Adam Leventhal",
+	"Year": 2016,
+	"Complaints": [
+		"stuck in Plan9 thinking",
+		"no assertions",
+		"un-Googlable name",
+		"tracebacks limited to 100 stack frames",
+		"confusing and undebuggable",
+		"no frame pointers",
+		"too opinionated"
+	]
+},{
+	"URL": "http://www.lessonsoffailure.com/software/google-go-good-for-nothing/",
+	"Author": "Dave Rodenbaugh",
+	"Year": 2009,
+	"Complaints": [
+		"slower than C++",
+		"memory footprint is worse than C++",
+		"syntax is too different from C, C++, and Java"
+	]
+},{
+	"URL": "http://www.lessonsoffailure.com/software/googles-go-not-getting-us-anywhere-part-2/",
+	"Author": "Dave Rodenbaugh",
+	"Year": 2009,
+	"Complaints": [
+		"slower than C++",
+		"CSP implementation is only partial",
+		"standard library is limited",
+		"no GUI support in standard library",
+		"no database support in standard library",
+		"statically linked",
+		"no exceptions",
+		"syntax is too different from C, C++, and Java"
+	]
+},{
+	"URL": "https://blog.carlmjohnson.net/post/google-go-the-good-the-bad-and-the-meh/",
+	"Author": "Carl Johnson",
+	"Year": 2013,
+	"Complaints": [
+		"too simple / lack of syntactic sugar",
+		"no generics",
+		"string manipulation is a library package",
+		"too young",
+		"error handling is not mandatory",
+		"compiler warnings are errors",
+		"no function/operator overloading",
+		"no keyword arguments",
+		"no shebang lines"
+	]
+},{
+	"URL": "https://thenewstack.io/switching-to-go-and-learning-what-features-its-missing-along-the-way/",
+	"Author": "Matthew Campbell",
+	"Year": 2015,
+	"Complaints": [
+		"regex engine is slow",
+		"no generics",
+		"serialization is inefficient",
+		"is garbage-collected",
+		"no good integration test suite",
+		"no dynamic linking / plugins",
+		"no decent XML parser"
+	]
+},{
+	"URL": "https://bugfender.com/blog/go-pros-cons-using-go-programming-language/",
+	"Author": "Aleix Ventayol",
+	"Year": 2017,
+	"Complaints": [
+		"shortage of experienced developers",
+		"import-based vendoring is terrible",
+		"compiler warnings are errors",
+		"circular dependencies are errors",
+		"unwieldy to code new collections",
+		"no generics",
+		"too young",
+		"debugging support is poor",
+		"profiling support is poor",
+		"public library packages are half-baked or abandoned",
+		"dependency management sucks"
+	]
+},{
+	"URL": "https://zapier.com/engineering/go-no-go/",
+	"Author": "Jordan Sherer",
+	"Year": 2017,
+	"Complaints": [
+		"unwieldy to code new collections",
+		"dependency management sucks",
+		"no inheritance",
+		"no classes",
+		"no generics",
+		"no exceptions"
+	]
+},{
+	"URL": "https://bluxte.net/musings/2018/04/10/go-good-bad-ugly/",
+	"Author": "Sylvain Wallez",
+	"Year": 2018,
+	"Complaints": [
+		"no generics",
+		"sort.Interface approach is clumsy",
+		"designers did not consult the literature",
+		"Fisher-Price assembly language",
+		"no functional programming",
+		"is garbage-collected",
+		"interfaces are not contracts",
+		"can't declare/validate implements interface",
+		"no enums",
+		"unexpected variable shadowing",
+		"zero values are a bad idea",
+		"error handling is mandatory",
+		"writing to a zero map panics",
+		"dependency management sucks",
+		"GOPATH is a mess",
+		"not-so-obvious slices behaviour",
+		"no immutables",
+		"race conditions are possible",
+		"io.EOF is an error",
+		"not Rust",
+		"interface values that hold nil concrete values are non-nil",
+		"struct field tags are free-form strings",
+		"no constructors",
+		"unwieldy to code new collections",
+		"can't range over user-defined types",
+		"no macros or templates",
+		"go generate is a quirk",
+		"no exceptions"
+	]
 }]
